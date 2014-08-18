@@ -1,0 +1,63 @@
+body 
+	{	
+	font-family: 'Josefin Slab',sans-serif;
+	background-color: #fff;
+	color:#eee;
+	padding: 20px;
+	margin: 10px 100px 10px 100px;
+}
+
+h1 {
+	color: #181818;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {	
+	color: #000;
+	font-style:none;
+	font-weight:bold;
+	text-align: left;
+}
+
+h3 {
+	color: #383838;
+	font-style:none;
+	text-align: left;
+}
+
+h4 {
+	color: #505050;
+	font-weight: normal;
+	font-style: none;
+	text-align: left;
+}
+
+p {
+	color:#606060;
+}
+
+ul {
+	color:#606060;
+}
+
+a {
+	color: #101010;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+hr {
+	border: 1px solid #F0F0F0;
+	clear:both;
+}
+
+nav {
+	text-align:center;
+}
