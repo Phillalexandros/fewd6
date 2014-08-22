@@ -1,0 +1,224 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+} 
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	
+}
+
+.top-bar {
+	position: fixed; 
+	background-color: #fff;
+	border-bottom: 3px solid #000;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 10px;
+	padding-top: 17px;
+	z-index: 1; /*z-index basically says "this comes first, and all of the other content goes underneath" */
+
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.top-nav > a {
+	font-size: 19px;
+	text-decoration: none;
+	color: #000;
+	margin-right: 0;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+.top-nav > a:hover {
+	background-color: black;
+	color: white;
+}
+
+.gallery-nav > a {
+	float: left;
+	width: 25%;
+	overflow: hidden; /* overflow crops the image so that it doesn't go all over the place */
+}
+
+.gallery-nav img {
+	display: block;
+	position: relative;
+	left: -250px;
+	top: 50px;
+}
+
+.gallery-nav > a h1 {
+	position: relative;
+	top: -200px;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	display: inline-block;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding-top: 10px;
+	border-bottom: 3px solid #000;
+}
+
+/*.gallery-nav > hr {   I couldn't get this HR to work, probably because it's not a block element?
+	height: 30px;
+	background-color: black;
+	width: 100%;
+	margin-top: -100px; 
+}*/
+
+.bottom-bar {
+	display: inline-block;
+	height: 40px;
+	background-color: black;
+	width: 100%;
+	margin-top: -100px;
+}  /*freaking finally! 40 minutes to get this bar to work!*/
+
+.about-ryan {
+	position: relative;
+	background-color: #fff;
+	width: 100%;
+	margin: 0 auto; /*found this on stackoverflow, and it totally made 
+	this work, however I don't understand what margin: 0 auto really
+	does*/
+}
+
+.ryan-image img {
+	float: left;
+	width: 510px;
+	height: 525px;
+	margin-left: 300px;
+	margin-bottom: 15px;
+}
+
+.progress-bars {
+	float: right;
+	font-size: 10pt;
+	width: 510px;
+	height: 525px;
+	margin-right: 255px; 
+	margin-top: 20px;
+}
+
+progress[value] {
+	  /* Reset the default appearance - but can't figure out how to
+	  change the color now - so it's all green */
+ 	-webkit-appearance: none;
+  	 appearance: none;
+
+	width: 500px;
+	height; 20px
+	background-color: black;
+	color: black;
+	border-radius: 2px;
+	margin: 0 auto;
+
+}
+
+.progress-bars p {
+	font-weight: bold;
+}
+
+.gallery-wedding {
+	position: relative;
+	top: -10px;
+	width: 100%;
+	background-color: black;
+	overflow: hidden; /* overflow crops the image so that it doesn't go all over the place */
+}
+
+.firstimage img {
+	position: absolute;
+	border: 5px solid black;
+	margin-top: -5px;
+	width: 50%;
+}
+
+.secondimage img {
+	position: absolute;
+	left: 790px;
+	border: 5px solid black;
+	margin-top: -5px;
+	width: 25%;
+	height: 533px;
+}
+
+.thirdimage img {
+	position: absolute;
+	left: 1180px;
+	width: 10%;
+	border: 5px solid black;
+	margin-top: -5px;
+	width: 405px;
+	height: 275px;
+}
+
+.fourthimage img {
+	position: relative; /*this should be absolute, like the others, but
+	if I do this, it breaks the site - why? */
+	left: 1180px;
+	width: 10%;
+	border: 5px solid black;
+	margin-top: 260px;
+	width: 405px;
+	height: 268px;
+}
+
+.gallery-headshot {
+	position: relative;
+	top: -10px;
+	width: 100%;
+	background-color: black;
+	overflow: hidden; /* overflow crops the image so that it doesn't go all over the place */
+}
+.fifth-image img {
+	position: absolute;
+	border: 5px solid black;
+	width: 50%;
+	
+}
+
+.siximage img {
+	position: absolute;
+	left: 790px;
+	border: 5px solid black;
+	margin-top: -5px;
+	width: 25%;
+	height: 533px;
+}
+
+.sevenimage img {
+	position: absolute;
+	left: 1180px;
+	width: 10%;
+	border: 5px solid black;
+	margin-top: -5px;
+	width: 405px;
+	height: 275px;
+}
+
+.eightimage img {
+	position: relative;
+	left: 1180px;
+	width: 10%;
+	border: 5px solid black;
+	margin-top: 260px;
+	width: 405px;
+	height: 268px;
+}
